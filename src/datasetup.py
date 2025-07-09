@@ -77,5 +77,7 @@ df = pd.DataFrame({
 
 print(df.head())
 
-# Save to CSV
-df.to_csv(write_path, index=False)
+# Save as compressed CSV
+df.to_csv(write_path.with_suffix(".csv.gz"), index=False, compression="gzip")
+
+print("finished!")
