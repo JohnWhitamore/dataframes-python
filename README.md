@@ -7,9 +7,11 @@ Clean examples of dataframe code. Uses synthetic retail sales data as a running 
 - 63 days (9 weeks)
 
 ### packages used
+`pathlib`: for managing load and write paths.  
 `Numpy`: to load and re-shape .npz data.  
 `Pandas`: widely used dataframe.  
-`pathlib`: for managing load and write paths.  
+`statsmodels`: analyse data.  
+`matplotlib.pyplot`: plot charts.
 
 ### data/
 
@@ -24,3 +26,11 @@ Clean examples of dataframe code. Uses synthetic retail sales data as a running 
 ### src/
 
 `datasetup.py`: loads npz data, reshapes it and saves it as compressed csv.
+
+`pandasuse.py`:
+- loads data from compressed csv.  
+- wrangles data: cast dates to datetime64; rename a column; add day-of-week columns.  
+- aggregate data: from store-product-date level to product-date level.  
+- analyse the data: using statsmodel.  
+- package up the model results into a dataframe.  
+- plot a chart.  
