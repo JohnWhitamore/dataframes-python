@@ -10,7 +10,7 @@ Clean examples of dataframe code. Uses synthetic retail sales data as a running 
 `pathlib`: for managing load and write paths.  
 `Numpy`: to load and re-shape .npz data.  
 `Pandas`: widely used dataframe.  
-`Polars`: good for ETL, data wrangling and large datasets. Limit interop with matplotlib.  
+`Polars`: good for ETL, data wrangling and large datasets. Limited interop with matplotlib.  
 `statsmodels`: analyse data.  
 `matplotlib.pyplot`: plot charts.
 
